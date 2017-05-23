@@ -6,3 +6,9 @@
 body {
     font: 14px/1.5 'Architects Daughter', Helvetica, Arial, sans-serif;
 }
+
+@media print {
+    header nav, footer {
+display: none;
+}
+}
