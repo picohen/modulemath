@@ -8,7 +8,5 @@ body {
 }
 
 @media print {
-    header nav, footer {
-display: none;
-}
+    header, footer {display: none;}
 }
