@@ -7,7 +7,7 @@ Pubblicazioni
 <ul>
   {% for post in site.posts %}
     <li>
-      ({{post.date}}) - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} - Categories: {{ post.categories }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> Published on {{ post.date.to_date }} under categories {{ post.categories.join(", ") }}
     </li>
   {% endfor %}
 </ul>
