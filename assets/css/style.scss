@@ -7,6 +7,45 @@ body {
     font: 16px 'Architects Daughter', Helvetica, Arial, sans-serif;
 }
 
+hr {
+    border: 0;
+    background: #e5e5e5;
+    height: 1px;
+    margin: 0 0 10px;
+}
+
+header ul {
+    list-style: square;
+    height: 60px;
+    padding: 0;
+    background: #ffffff;
+    border-radius: 0px;
+    border: 0px solid #e0e0e0;
+    width: 270px;
+	margin-left: 20px;
+}
+
+
+header li {
+    width: 89px;
+    float: none;
+	text-align:left;
+	border-right: 0px;
+	width: 200px; 
+	height: 25px;
+	}
+
+header ul a {
+    line-height: 1;
+    font-size: 20px;
+    color: #39c;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding-top: 6px;
+    height: 34px;
+}
+	
 @media print {
     header, footer {display: none;}
 }

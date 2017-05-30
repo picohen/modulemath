@@ -1,0 +1,10 @@
+{
+  "name": "modulemath",
+  "homepage": "https://github.com/picohen/modulemath",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "jqcloud2": "^2.0.3"
+  }
+}

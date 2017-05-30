@@ -19,22 +19,40 @@ MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
 </script>
+
+
+<script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/bower_components/jqcloud2/dist/jqcloud.min.js"></script>
+
+<link rel="stylesheet" href="{{ site.baseurl }}/bower_components/jqcloud2/dist/jqcloud.min.css">
+
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
-      </header>
+      <!--  <h2>Indice</h2>
+        <ul>
+          <li>Modulo i</li>
+          <li>Modulo ii</li>
+          <li>Modulo iii</li>
+          <li>Modulo iv</li>
+          <li>Modulo v</li>
+        </ul>-->
+        <div id="demo">
+        </div>
+
+	  </header>
+
+
       <section>
 
       {{ content }}
 
       </section>
       <footer>
-        <hr/>
-        <p>Sito in costruzione.</p>
-        <p><small>Hosted on GitHub Pages, repo <a href="{{ site.github.repository_url }}"><small>{{ github_name }}</small></a> </small></p>
+        <p><small>Powered by GitHub Pages, Jekyll, MathJax</small></p>
       </footer>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
@@ -51,7 +69,27 @@ MathJax.Hub.Config({
         ga('send', 'pageview');
     </script>
   {% endif %}
-    
-    
+
+  <script type="text/javascript">
+
+  var words = [
+    {text: "Modulo i", weight: 0, link: '{{site.baseurl}}/pages/moduloi'},
+    {text: "Modulo ii", weight: 0},
+    {text: "Modulo iii", weight: 0},
+    {text: "Modulo iv", weight: 0},
+    {text: "Modulo v", weight: 0, link: '{{site.baseurl}}/pages/modulov'}
+  ];
+
+  $('#demo').jQCloud(words,
+  {
+   width: 270,
+   height: 250
+  })
+
+  ;
+  </script>
+
+
+
   </body>
 </html>

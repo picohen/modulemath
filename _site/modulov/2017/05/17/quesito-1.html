@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Moduli di matematica by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/jqcloud2/dist/jqcloud.min.js"></script>
+
+<link rel="stylesheet" href="/bower_components/jqcloud2/dist/jqcloud.min.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Moduli di matematica</h1>
+        <p>Moduli propedeutici di matematica per la preparazione scolastica superiore</p>
+      <!--  <h2>Indice</h2>
+        <ul>
+          <li>Modulo i</li>
+          <li>Modulo ii</li>
+          <li>Modulo iii</li>
+          <li>Modulo iv</li>
+          <li>Modulo v</li>
+        </ul>-->
+        <div id="demo">
+        </div>
+
+	  </header>
+
+
+      <section>
+
+      <h1 id="quesito-sul-metodo-di-integrazione-per-sostituzione">Quesito sul metodo di integrazione per sostituzione</h1>
+
+<p>Calcolare l’integrale:</p>
+
+<script type="math/tex; mode=display">I=\int\frac{5e^x}{1+e^{2x}}\,dx</script>
+
+<hr />
+
+<h2 id="soluzione">Soluzione</h2>
+<p>Risulta:</p>
+
+<script type="math/tex; mode=display">I=5\,\arctan(e^x) + c,\;c\in R</script>
+
+<hr />
+
+<h2 id="traccia">Traccia</h2>
+
+<p>Solitamente, integrali di questo tipo contenenti la funzione esponenziale si risolvono per sostituzione ponendo $\boxed{e^x=t}$ . Si noti che in generale possiamo scrivere:</p>
+
+<script type="math/tex; mode=display">e^{nx}=(e^x)^n=t^n</script>
+
+<p>Procediamo quindi per sostituzione:</p>
+
+<ul>
+  <li>$e^x=t$</li>
+  <li>$ x = \ln t$</li>
+  <li>$dx = D_t(\ln t)\,dt=\frac{1}{t}\,dt$</li>
+</ul>
+
+<p>Sostituendo ci si riconduce a un integrale immediato del seguente tipo:</p>
+
+<script type="math/tex; mode=display">\int \frac{k}{1+t^2}\,dt</script>
+
+<p>risolvibile con l’arcotangente.</p>
+
+
+      </section>
+      <footer>
+        <p><small>Powered by GitHub Pages, Jekyll, MathJax</small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+
+  <script type="text/javascript">
+
+  var words = [
+    {text: "Modulo i", weight: 0, link: '/pages/moduloi'},
+    {text: "Modulo ii", weight: 0},
+    {text: "Modulo iii", weight: 0},
+    {text: "Modulo iv", weight: 0},
+    {text: "Modulo v", weight: 0, link: '/pages/modulov'}
+  ];
+
+  $('#demo').jQCloud(words,
+  {
+   width: 270,
+   height: 250
+  })
+
+  ;
+  </script>
+
+
+
+  </body>
+</html>
